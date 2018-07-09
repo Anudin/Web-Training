@@ -1,0 +1,14 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    line-height: 1.4;
+
+    --dark: #333333;
+    --dark-accent-light: #444444;
+    --dark-accent-dark: #222222;
+    --light: #eeeeee;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}

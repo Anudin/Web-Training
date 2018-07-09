@@ -1,0 +1,48 @@
+#navbar {
+    background-color: var(--dark)
+}
+
+#navtabs {
+    display: flex;
+}
+
+#navtabs, #navtabs ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navtabs a {
+    display: inline-block;
+    padding: 8px 8px;
+    position: relative;
+
+    text-decoration: none;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+#navtabs a:hover {
+    background-color: var(--dark-accent-light)
+}
+
+#navtabs a.active::before {
+    content: "";
+    height: 2px;
+    background-color: #C2FF0A;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#navtabs ul {
+    position: absolute;
+    flex-direction: column;
+    display: none;
+}
+
+#navtabs a:hover+ul, #navtabs ul:hover {
+    display: block;
+}

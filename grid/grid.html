@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Grid</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" type="text/css" href="../normalize.css" />
+    
+    <style>
+        html {
+            --color-light-bg: #333333;
+            --color-dark-bg: #eeeeee;
+
+            font-family: 'Roboto';
+            font-size: 16px;
+            line-height: 1.4;
+            color: var(--color-light-bg);
+
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        *, *:before, *:after {
+            -webkit-box-sizing: border-box;
+            box-sizing: inherit;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 200px 400px;
+        }
+
+        a {
+            color: var(--color-light-bg);
+        }
+
+        aside {
+            background-color: #AB2F52;
+        }
+
+        aside a {
+            color: #ffffff;
+        }
+
+        main {
+            background-color: #E88554;
+        }
+
+        div {
+            color: #ffffff;
+        }
+
+        div:nth-of-type(even) {
+            background-color: #666666;
+        }
+        
+        div:nth-of-type(odd) {
+            background-color: #333333;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <a href="http://">Lorem ipsum dolor sit amet.</a>
+    </aside>
+    <main>
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </main>
+    <div>
+        Sidebar.
+    </div>
+    <div>
+        Text.
+    </div>
+</body>
+</html>

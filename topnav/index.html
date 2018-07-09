@@ -1,0 +1,54 @@
+<!--
+    JS dropdown, animated, screen reader compatible
+    Akkordeon
+    Image Slider
+    Image Galary
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Topnav</title>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="base.css">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script>
+        window.onload = function() {
+            updateActiveTabOnClick();
+
+            function updateActiveTabOnClick() {
+                var buttons = document.querySelectorAll("#navtabs .button");
+
+                for(var i = 0; i < buttons.length; i++) {
+                    buttons[i].addEventListener("click", function () {
+                        var last = document.querySelector("#navtabs .active").classList;
+                        last.remove("active", "animated", "bounce");
+                        this.classList.add("active", "animated", "bounce");
+                    });
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <nav id="navbar">
+        <ul id="navtabs">
+            <li><a href="#" class="button active">Home</a></li>
+            <li><a href="#" class="button">About Me</a></li>
+            <li><a href="#">Dropdown</a>
+                <ul>
+                    <li><a href="#">Item 1</a></li>
+                    <li><a href="#">Item 2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
