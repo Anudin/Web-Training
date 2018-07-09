@@ -43,6 +43,11 @@
     display: none;
 }
 
+#navtabs ul ul {
+    position: relative;
+    float: right;
+}
+
 #navtabs a:hover+ul, #navtabs ul:hover {
     display: block;
 }
